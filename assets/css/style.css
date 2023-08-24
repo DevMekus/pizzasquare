@@ -1,0 +1,1533 @@
+/*************************** GENERAL SETTINGS ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@900&display=swap');
+:root {
+    --primaryColor: #D51D28;
+    --secondaryColors: #00A859;
+    
+    --grayColor: rgba(219, 219, 219, 0.8);
+    --grayColor2: rgba(219, 219, 219);  
+    --headerFonts: "Montserrat", sans-serif;
+    --paragraphFonts: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+table thead th{
+font-family: var(--headerFonts);
+font-weight: 700;
+}
+
+p,
+a,
+label,
+table tbody td  {
+font-family: var(--paragraphFonts);
+
+}
+
+.flex {
+    display: flex;
+}
+
+.space_between {
+justify-content: space-between;
+}
+
+.space_evenly {
+justify-content: space-evenly;
+}
+
+.space_around {
+justify-content: space-around;
+}
+
+.space_center {
+justify-content: center;
+}
+
+.flex_end {
+justify-content: flex-end;
+}
+
+.align_center {
+align-items: center;
+}
+
+.navbarBg{
+    background-color: var(--primaryColor);
+    color: white;
+    transition: all .38s ease-in-out;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.navbarBg a{
+    color: white;
+}
+
+.btn{
+    font-weight: bold;
+}
+.btn-danger:hover{
+    opacity: .8;
+    background-color: rgb(254, 0, 0);
+    color: white;
+}
+
+.btn-danger{
+    background-color: rgb(254,0,0);
+    color: white;
+}
+
+.btn-success{
+    background-color: #00A859;
+    color: white;
+}
+
+.navContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.leftSide{
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightSide{
+    width: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.heroImage {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--primaryColor);
+    background-image: url('../images/brand/pizzabg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cartCounter {
+    display: flex;   
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.cartCounter p:first-child{
+    margin-right: 10px;    
+}
+
+.cartCounter .inner{
+    display: flex;
+    margin-right: 20px;
+   
+}
+
+
+
+.smallHero{
+    width: 100%;
+    height: 40vh;
+}
+
+.adminHero{
+    width: 100%;
+    height: 30vh;
+}
+
+.mycard {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+  
+}
+
+.mycard h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: black;
+}
+
+.mycard p{
+    color: black;
+    font-weight: bold;
+}
+
+
+.customBtn{
+    border-radius: 0;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: 1px solid var(--grayColor);
+    padding: 20px;
+}
+
+.mediaIcons{
+    width: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mediaIcons a{
+    font-size: 20px;
+}
+
+.green{
+    color: var(--secondaryColors);
+}
+
+.topspacing{
+    margin-top: 20px;
+}
+
+.video_wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 50vh;
+}
+
+.video_wrapper video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video_wrapper iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.breadcrumbNav {
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+  }
+  
+  .breadcrumItem {
+    color: white;
+  }
+  
+  .trackForm{
+    width: 400px;
+    position: relative;
+  }
+
+.productFlex{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.width80{
+    width: 80%;
+    margin: auto;
+}
+
+.modalProductFlex{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.dropDownProduct{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    display: none;
+    transition: all .38s ease-in-out;
+   
+}
+
+.showdropDownProduct{
+    display: block;
+}
+
+.productFlex2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(187, 183, 183);
+}
+
+.imagePreview{
+    width: 250px;   
+    position: relative;
+    margin-right: 20px;
+ 
+    transition: all .38s ease-in-out;
+}
+
+.productContain{
+    width: 100%;
+    height: 350px;
+    overflow: scroll;
+    position: relative;
+}
+
+.productContain::-webkit-scrollbar {
+    display: none;
+  }
+
+.imagePreview img{
+    width: 100%; 
+    transition: all .38s ease-in-out;   
+}
+
+.scrollDisplayUp{  
+    top: 0;
+    right: 0;   
+}
+
+.scrollDisplay{
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.showScrollDisplay{
+    display: block;
+}
+
+.scrollDisplayDown{   
+    bottom: 0;
+    right: 0;
+}
+
+.scrollDisplay span{
+    font-size: 40px;
+ 
+    color: var(--secondaryColors);
+}
+
+.imagePreview:hover img{
+    transform: scale(1.1);
+}
+
+.itemDescription{
+   margin-top: 40px;
+    position: relative;
+   width: calc(100% - 350px);
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none;  /*Hidden by default*/
+    visibility: hidden;
+    width: 100%; /* Full width (cover the whole page)*/
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 200; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    display: flex;
+    justify-content: center;
+    transition: all .38s ease-in-out;
+  
+}
+
+.close_overlay{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.close_overlay span{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.overlay_inner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cart_inner_body {
+    width: 100%;
+    height: 350px;
+    overflow: scroll;
+    border-bottom: 1px solid var(--grayColor);
+    border-top: 1px solid var(--grayColor);
+  }
+  
+  .cart_inner_body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .cart_item_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .prod_disp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .prod_disp img {
+    width: 50px;
+  }
+  
+  .price_disp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+.removeItem {
+    color: var(--redColor);
+    cursor: pointer;
+}
+
+.size200 {
+    width: 200px;
+}
+
+.brandName{
+    font-weight: 900;
+}
+
+
+.cart_footer {
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+    padding: 20px;
+  }
+  
+  .cart_summary {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .subtotal_amount_cart {
+    color: var(--primaryColor);
+  }
+
+  .subtotal_amount{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primaryColor);
+  }
+  
+  .cart_actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid var(--grayColor);
+    position: relative;
+  }
+  
+  .view_cart {
+    text-decoration: none;
+  }
+  
+  .cart_action {
+    background-color: var(--primaryColor);
+    padding: 10px 20px;
+    opacity: 0.9;
+    color: white;
+    width: 45%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.cart_action:hover {
+    opacity: 1;
+    color: white;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessionFlex{
+    width: 900px;
+    position: relative;
+    display: flex;
+    border: 1px solid var(--grayColor);
+    border-radius: 10px;
+}
+
+.cont{
+    width: 50%;
+    position: relative;
+}
+
+.logo-login{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.image_content_signup{
+  position: relative;   
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background: var(--primaryColor);  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(42,96,65,0.8), rgba(40,150,90, 0.8)), url("../images/brand/pizzabg.png");
+  background: linear-gradient(rgba(42,96,65,0.8), rgba(40,150,90, 0.8)), url("../images/brand/pizzabg.png"); /* The least supported option. */ 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_content_signup p{
+  color: white;
+}
+
+.logo-login{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forgotPass{
+    text-decoration: none;
+    font-size: 16px;    
+}
+
+.footer-logo{
+    width: 200px;
+    position: relative;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+.product_display_model{
+    max-width: 600px;
+    margin: auto;
+    height: 600px;
+    overflow: scroll;
+    border: 1px solid var(--grayColor);
+    padding: 20px;
+}
+
+.product_display_model::-webkit-scrollbar {
+    display: none;
+}
+
+.modalProduct{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.modalProduct img{
+    width: 150px;
+    height: 150px;
+}
+
+.cartProduct{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.cartProduct img{
+    width: 80px;
+    height: 80px;   
+}
+
+.removeItem{
+    color: #D51D28;
+}
+
+.percenter100 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space_section20{
+    margin-top: 20px;
+}
+
+.flex-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexitem{
+    width: 350px;
+    position: relative;
+}
+
+.invoiceFlex{
+    position: relative;
+    display: flex;   
+}
+
+.invoiceDateID{   
+    width: 100%; 
+}
+
+.invoiceDateID p:first-child{
+    margin-right: 10px;
+}
+
+.invoiceFlex span{
+    margin-right: 10px;
+}
+
+.summary-invoice{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.summary-inner{
+    width: 350px;
+    position: relative;
+    padding: 10px;
+}
+
+.summary-inner .item{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+table thead tr th, .invTitle{
+    color: blue;
+}
+
+.check span{
+    color: var(--secondaryColors);
+}
+
+.price{
+    color: var(--primaryColor);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.successBody{
+    background-color: #f0f5f5; 
+    padding:10px
+}
+
+.containerSuccess{
+    width:90%; margin:auto; 
+    border:1px solid #d1e0e0; 
+    background-color: #ffffff;
+}
+
+.order-details{
+    width: 100%;
+    position: relative;
+}
+
+.successCard{
+    width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.loaderContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loaderContainer img{
+    width: 300px;
+}
+
+.loaderContainer p{
+    font-size: 25px;
+    letter-spacing: 20px;
+    margin-top: 20px;
+    color: var(--secondaryColors);
+}
+
+.w350{
+    width: 350px;
+}
+
+.brandLogo{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinkCont{
+    padding: 20px;
+}
+
+.navLinkCont a{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.navLinkCont a:hover{
+    color: #D51D28;
+   
+}
+
+.paginationitem{
+    display: flex;
+}
+
+.viconLink{
+    display: flex;
+    align-items: center;   
+    position: relative;
+    margin-top: 15px;
+}
+  
+.viconLink a{
+    color: black;
+    text-decoration: none;
+}
+
+.viconLink span{
+    margin-right: 15px;
+}
+
+.activeBg{
+    background-color: var(--secondaryColors);
+    color: white;
+}
+
+.attension{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.feedback{
+    width: 550px;
+    position: relative;
+}
+
+.addProduct{
+    width: 100%;
+}
+
+.closeDrawer{
+    width: 100%;
+    position: relative;
+    display: none;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.closeDrawer span{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.barNav{
+   display: none;
+}
+
+.gTotal{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.redBar{
+    background-color: var(--primaryColor);
+    box-shadow: 0px 0px 10px 2px rgba(61, 61, 61, 0.8);
+    /* border-bottom: 1px solid rgb(102, 102, 102); */
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.rightSide .inner .fa{
+    font-size: 30px;
+    color: black;
+}
+
+.rightSide p{
+    color: white;
+}
+
+
+/*************************************/
+
+.homeBanner{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(213,29,40);
+    background-image: url('../images/brand/pizzabg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative; 
+    flex-wrap: wrap;     
+}
+
+.welcome_container{
+    margin-left: 150px;
+}
+
+@keyframes welcome {
+    0%  {
+           margin-top: -100px;           
+        }
+    100% {
+
+    }
+}
+
+.welcome h1{
+    font-size: 70px;
+    color: black;
+    font-weight: 800;
+    animation-name: welcome;
+    animation-duration: 3s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.welcome p{
+    font-size: 25px;
+    color:  rgb(95, 16, 29);
+    font-weight: bold;
+}
+
+.ctaa{
+    margin-top: 40px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.ctaa a{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.whatsapp-code{
+    width: 100%;
+    position: relative;
+}
+
+.bottomfix{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottomfix .chatIcon img{
+    width: 60px;
+}
+
+.leftSide .nav-link{
+    position: relative;
+    transition: all .38s ease-in-out;
+}
+
+.nav-link:hover {
+   color: rgb(95, 16, 29);  
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.mybtn{
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-black{
+    background-color: black;
+    color: white; 
+    opacity: .8; 
+}
+.pad20{
+    padding: 20px;
+}
+
+.btn-black:hover{
+    opacity: 1;
+    color: white;
+}
+
+.EmptyCart{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EmptyCart i{
+    font-size: 50px;
+    color: rgb(237, 235, 235);
+}
+
+.EmptyCart p{
+    font-size: 30px;
+    color: red;
+}
+
+.processIcon2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.proc{
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proc img{
+    margin-bottom: 10px;
+}
+
+.carouselCenter{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselCenterInner{
+    width: 500px;
+    margin: auto;
+}
+
+.feedBackCheckout{
+    width: 400px;
+    margin: auto;
+}
+
+.success_image_container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+  
+.show_mobile{
+     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 762px) {
+        
+    .sessionFlex{
+        width: 95%;
+        margin: auto;
+        position: relative;
+        display: flex;
+        /* border: 1px solid var(--grayColor); */
+        border-radius: 10px;
+         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .show_mobile{
+        display: block;
+   }
+
+   .hide_mobile{
+    display: none;
+   }
+
+         
+    .homeBanner{
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(213,29,40);
+        background-image: url('../images/brand/pizzabg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .welcome{
+        display: flex;
+        align-items: center; 
+        justify-content: center;      
+        width: 100%;
+        margin: auto;
+        position: relative; 
+        flex-wrap: wrap;   
+        flex-direction: column;  
+    }
+    
+    .welcome_container{
+        margin-left: 0px;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+       
+    }
+    
+    @keyframes welcome {
+        0%  {
+               margin-top: -100px;           
+            }
+        100% {
+    
+        }
+    }
+    
+    .welcome h1{
+        font-size: 70px;
+        color: black;
+        font-weight: 800;
+        animation-name: welcome;
+        animation-duration: 3s;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+
+    .welcome h1:last-child{
+        margin-top: -20px;
+    }
+    
+    .welcome p{
+        font-size: 20px;
+        color:  rgb(95, 16, 29);
+        font-weight: bold;        
+    }
+    
+    .ctaa{
+        margin-top: 30px;
+        width: 400px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .ctaa a{
+        background-color: black;
+        color: white;
+        padding: 18px;
+        text-decoration: none;
+    }
+
+    .logo-login{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .quoteArea{
+        display: none;
+    }
+
+    .image_content_signup{
+        display: none;
+    }
+
+    .cont{
+        width: 100%;
+        position: relative;
+    }
+
+    .navbarBg{
+        background-color: var(--primaryColor);
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        bottom: 0;
+        width: 300px;
+        height: 100vh;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;        
+        transition: all .38s ease-in-out;
+
+    }
+
+    
+    .showSideNav{    
+        visibility: visible;
+        opacity: 1;
+        top: 0px;
+      
+    }
+    
+    .navbarBg a{
+        color: white;
+    }
+    
+    .navContainer{
+        width: 300px;
+        position: relative;       
+        display: flex;
+        padding: 10px;
+        flex-direction: column-reverse;
+        
+    }
+    
+    .leftSide{      
+        position: relative;
+        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 50px;
+        margin-left: 250px;
+     
+    }
+    
+    .rightSide{
+        width: 250px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        /* width: 100%; */
+    }
+
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .nav-brand-cont{
+        background-color:  rgb(95, 16, 29);
+        padding: 10px;
+        width: 250px;
+        position: relative;
+    }
+
+    .leftSide .nav-link{
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .closeDrawer{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .closeDrawer span{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mycard{
+        width: 90%;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 20px;
+        color: black;
+       
+    }
+    
+    .mycard h1{
+        font-weight: 800;
+        font-size: 50px;
+        color: black;
+    }
+
+    .mycard .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mycard p{
+        color: black;
+        font-weight: bold;
+    }
+
+   
+
+    .barNav{
+        width: 100%;
+        position: relative;      
+        background-color: var(--primaryColor);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .barNav .bar span{
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .barNav .inner p i{
+        color: black;
+    }
+
+   
+
+    .adminBar .span{
+        color: black;
+    }
+
+    .heroImage {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background-color: var(--primaryColor);
+        background-image: url('../images/brand/pizzabg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .w100mobile{
+        width: 100%;
+        position: relative;
+    }
+
+    .trackForm{
+        width: 100%;
+        position: relative;
+    }
+
+    .modalProductFlex{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .productFlex2{
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid rgb(187, 183, 183);
+        flex-direction: center;
+    }
+    
+
+    .product_display_model{
+        width: 100%;
+        margin: auto;
+        height: 600px;
+        overflow: scroll;
+        border: 1px solid var(--grayColor);
+        padding: 20px;
+    }
+    
+    .product_display_model::-webkit-scrollbar {
+        display: none;
+    }
+
+    .productFlex{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .itemDescription{
+        margin-top: 40px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .itemDescription p, .itemDescription h4, .itemDescription h5{
+        text-align: center;
+    }
+
+    .itemDescription button{
+        margin-bottom: 10px;
+    }
+
+    .removeOnMobile{
+        display: none;
+    }
+
+    .summary-invoice{
+        display: block;
+        /* justify-content: flex-end; */
+        width: 100%;
+    }
+    
+    
+    .summary-inner{
+        width: 100%;
+        position: relative;     
+    
+    }
+
+    .summary-inner .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    table thead th{
+
+        font-family: var(--headerFonts);
+        font-weight: 600;
+
+    }
+
+    .order-details{
+        width: 100%;
+        position: relative;
+    }
+
+    .displayOrderDetail{
+        width: 100%;
+        position: relative;
+    }
+
+    .successCard{
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .herocardInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .herocardInner h1, .herocardInner p{
+        text-align: center;
+    }
+
+    .herocardInner h1{
+        font-size: 35px;
+    }
+
+    .per100{
+        width: 100%;
+    }
+
+    .orderBtn{
+        width: 100%;
+    }
+
+    .scrollTable{
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .scrollTable::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide_on_mobile{
+        display: none;
+    }
+
+    
+
+    .btn-black{
+        background-color: black;
+        color: white; 
+        opacity: .8; 
+        text-align: center;
+    }
+    .pad20{
+        padding: 5px 10px;
+    }
+
+    .btn-black:hover{
+        opacity: 1;
+        color: white;
+    }
+
+    .whatsapp-code{
+        width: 100%;
+        position: relative;
+    }
+    
+    .bottomfix{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .bottomfix .chatIcon img{
+        width: 60px;
+    }
+
+    .carouselCenter{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carouselCenterInner{
+        width: 100%;
+        margin: auto;
+    }
+
+    .feedBackCheckout{
+        width: 90%;
+        margin: auto;
+    }
+    
+
+}
