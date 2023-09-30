@@ -49,7 +49,7 @@ include('header.php');
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Phone number</label>
-                                <input type="tel" class="form-control customBtn" id="phone" name="phone" placeholder="" required>
+                                <input type="text" class="form-control customBtn" id="phone" name="phone" placeholder="" required>
                             </div>
 
                             <!-- <div class="flex space_between">
